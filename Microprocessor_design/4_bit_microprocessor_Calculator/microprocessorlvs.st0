@@ -1,0 +1,13 @@
+****** HSPICE -- L-2016.06-SP1-2 linux64 (Oct 14 2016) ******
+ Input File: microprocessorlvs.sp
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   xxt170001            HOSTNAME: engnx08.utdallas.edu
+ lic: HOSTID: "047d7bd6c8cb"       PID:      37142
+ lic: Using FLEXlm license file:
+ lic: 1700@engdmv
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-jun-2021/2019.06
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 1700@engdmv
+ lic:
+ lic: Release hspice token(s)

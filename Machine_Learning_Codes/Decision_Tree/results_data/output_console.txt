@@ -1,0 +1,205 @@
+/usr/bin/python3.6 /home/soumyadeep/Documents/semester_3/machine_learning/assignment2/mycode/soumyadeep_decision_tree.py
+ Enter the path of monks data folder ; for example - ./monks_data : ./monks_data
+ Enter the number of subfolders in monks dataset ; for example - 3 : 3
+ 
+ ---------------------------------------------- 
+ 
+ Average Training Error for Monks dataset : 1 --->  0.0911
+ Average Testing Error for Monks dataset : 1 --->  0.1454
+
+ ---------------------------------------------- 
+ Average Training Error for Monks dataset : 2 --->  0.1692
+ Average Testing Error for Monks dataset : 2 --->  0.2488
+
+ ---------------------------------------------- 
+ Average Training Error for Monks dataset : 3 --->  0.0467
+ Average Testing Error for Monks dataset : 3 --->  0.0931
+
+ ---------------------------------------------- 
+TREE
++-- [SPLIT: x4 = 1 False]
+|	+-- [LABEL = 0]
++-- [SPLIT: x4 = 1 True]
+|	+-- [LABEL = 1]
+MONKS-1 DATASET : Learning using id3 : Confusion matrix for depth ->  1
+                Predicted Positives  Predicted Negatives
+True Positives                  216                    0
+True Negatives                  108                  108
+ ---------------------------------------------- 
+TREE
++-- [SPLIT: x4 = 1 False]
+|	+-- [SPLIT: x0 = 1 True]
+|	|	+-- [SPLIT: x1 = 1 True]
+|	|	|	+-- [LABEL = 1]
+|	|	+-- [SPLIT: x1 = 1 False]
+|	|	|	+-- [LABEL = 0]
+|	+-- [SPLIT: x0 = 1 False]
+|	|	+-- [SPLIT: x1 = 1 True]
+|	|	|	+-- [LABEL = 0]
+|	|	+-- [SPLIT: x1 = 1 False]
+|	|	|	+-- [LABEL = 1]
++-- [SPLIT: x4 = 1 True]
+|	+-- [LABEL = 1]
+MONKS-1 DATASET : Learning using id3 : Confusion matrix for depth ->  3
+                Predicted Positives  Predicted Negatives
+True Positives                  144                   72
+True Negatives                    0                  216
+ ---------------------------------------------- 
+TREE
++-- [SPLIT: x4 = 1 False]
+|	+-- [SPLIT: x0 = 1 True]
+|	|	+-- [SPLIT: x1 = 1 True]
+|	|	|	+-- [LABEL = 1]
+|	|	+-- [SPLIT: x1 = 1 False]
+|	|	|	+-- [LABEL = 0]
+|	+-- [SPLIT: x0 = 1 False]
+|	|	+-- [SPLIT: x1 = 1 True]
+|	|	|	+-- [LABEL = 0]
+|	|	+-- [SPLIT: x1 = 1 False]
+|	|	|	+-- [SPLIT: x4 = 3 False]
+|	|	|	|	+-- [SPLIT: x3 = 1 True]
+|	|	|	|	|	+-- [LABEL = 1]
+|	|	|	|	+-- [SPLIT: x3 = 1 False]
+|	|	|	|	|	+-- [LABEL = 1]
+|	|	|	+-- [SPLIT: x4 = 3 True]
+|	|	|	|	+-- [SPLIT: x1 = 2 True]
+|	|	|	|	|	+-- [LABEL = 1]
+|	|	|	|	+-- [SPLIT: x1 = 2 False]
+|	|	|	|	|	+-- [LABEL = 0]
++-- [SPLIT: x4 = 1 True]
+|	+-- [LABEL = 1]
+MONKS-1 DATASET : Learning using id3 : Confusion matrix for depth ->  5
+                Predicted Positives  Predicted Negatives
+True Positives                  156                   60
+True Negatives                   12                  204
+ ---------------------------------------------- 
+ 
+ ---------------------------------------------- 
+
+
+(eog:14481): EOG-CRITICAL **: 06:13:20.972: eog_list_store_get_pos_by_image: assertion 'EOG_IS_IMAGE (image)' failed
+MONKS-1 DATASET : Learning using scikit-learn : Confusion matrix for depth ->  1
+                Predicted Positives  Predicted Negatives
+True Positives                  216                    0
+True Negatives                  108                  108
+ ---------------------------------------------- 
+MONKS-1 DATASET : Learning using scikit-learn : Confusion matrix for depth ->  3
+                Predicted Positives  Predicted Negatives
+True Positives                  144                   72
+True Negatives                    0                  216
+ ---------------------------------------------- 
+MONKS-1 DATASET : Learning using scikit-learn : Confusion matrix for depth ->  5
+                Predicted Positives  Predicted Negatives
+True Positives                  168                   48
+True Negatives                   24                  192
+ ---------------------------------------------- 
+ 
+ ---------------------------------------------- 
+ 
+TREE
++-- [SPLIT: x6 = 1 False]
+|	+-- [LABEL = 4]
++-- [SPLIT: x6 = 1 True]
+|	+-- [LABEL = 2]
+TREE
++-- [SPLIT: x6 = 1 False]
+|	+-- [SPLIT: x2 = 1 False]
+|	|	+-- [SPLIT: x6 = 10 False]
+|	|	|	+-- [LABEL = 4]
+|	|	+-- [SPLIT: x6 = 10 True]
+|	|	|	+-- [LABEL = 4]
+|	+-- [SPLIT: x2 = 1 True]
+|	|	+-- [SPLIT: x0 = 1 True]
+|	|	|	+-- [LABEL = 4]
+|	|	+-- [SPLIT: x0 = 1 False]
+|	|	|	+-- [LABEL = 2]
++-- [SPLIT: x6 = 1 True]
+|	+-- [SPLIT: x5 = 2 False]
+|	|	+-- [SPLIT: x2 = 10 False]
+|	|	|	+-- [LABEL = 2]
+|	|	+-- [SPLIT: x2 = 10 True]
+|	|	|	+-- [LABEL = 4]
+|	+-- [SPLIT: x5 = 2 True]
+|	|	+-- [LABEL = 2]
+
+(eog:14481): EOG-CRITICAL **: 06:13:23.972: eog_job_thumbnail_cb: assertion 'EOG_IS_LIST_STORE (data)' failed
+TREE
++-- [SPLIT: x6 = 1 False]
+|	+-- [SPLIT: x2 = 1 False]
+|	|	+-- [SPLIT: x6 = 10 False]
+|	|	|	+-- [SPLIT: x0 = 1 False]
+|	|	|	|	+-- [SPLIT: x1 = 10 False]
+|	|	|	|	|	+-- [LABEL = 4]
+|	|	|	|	+-- [SPLIT: x1 = 10 True]
+|	|	|	|	|	+-- [LABEL = 4]
+|	|	|	+-- [SPLIT: x0 = 1 True]
+|	|	|	|	+-- [LABEL = 2]
+|	|	+-- [SPLIT: x6 = 10 True]
+|	|	|	+-- [SPLIT: x7 = 3 False]
+|	|	|	|	+-- [LABEL = 4]
+|	|	|	+-- [SPLIT: x7 = 3 True]
+|	|	|	|	+-- [SPLIT: x4 = 5 False]
+|	|	|	|	|	+-- [LABEL = 4]
+|	|	|	|	+-- [SPLIT: x4 = 5 True]
+|	|	|	|	|	+-- [LABEL = 2]
+|	+-- [SPLIT: x2 = 1 True]
+|	|	+-- [SPLIT: x0 = 1 True]
+|	|	|	+-- [LABEL = 4]
+|	|	+-- [SPLIT: x0 = 1 False]
+|	|	|	+-- [SPLIT: x0 = 1226012 False]
+|	|	|	|	+-- [SPLIT: x0 = 543558 False]
+|	|	|	|	|	+-- [LABEL = 2]
+|	|	|	|	+-- [SPLIT: x0 = 543558 True]
+|	|	|	|	|	+-- [LABEL = 4]
+|	|	|	+-- [SPLIT: x0 = 1226012 True]
+|	|	|	|	+-- [LABEL = 4]
++-- [SPLIT: x6 = 1 True]
+|	+-- [SPLIT: x5 = 2 False]
+|	|	+-- [SPLIT: x2 = 10 False]
+|	|	|	+-- [SPLIT: x9 = 1 False]
+|	|	|	|	+-- [SPLIT: x0 = 1071084 False]
+|	|	|	|	|	+-- [LABEL = 4]
+|	|	|	|	+-- [SPLIT: x0 = 1071084 True]
+|	|	|	|	|	+-- [LABEL = 2]
+|	|	|	+-- [SPLIT: x9 = 1 True]
+|	|	|	|	+-- [SPLIT: x4 = 10 False]
+|	|	|	|	|	+-- [LABEL = 2]
+|	|	|	|	+-- [SPLIT: x4 = 10 True]
+|	|	|	|	|	+-- [LABEL = 4]
+|	|	+-- [SPLIT: x2 = 10 True]
+|	|	|	+-- [LABEL = 4]
+|	+-- [SPLIT: x5 = 2 True]
+|	|	+-- [LABEL = 2]
+------------------------------------------------------------------------------------------------------------------
+Winsconsin breast cancer : id3 : Depth -> 1 : Confusion Matrix
+[[115  28]
+ [  7  60]]
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+Winsconsin breast cancer : id3 : Depth -> 3 : Confusion Matrix
+[[135   8]
+ [  6  61]]
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+Winsconsin breast cancer : id3 : Depth -> 5 : Confusion Matrix
+[[135   8]
+ [  4  63]]
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+Winsconsin breast cancer :  scikit-learn : Depth -> 1: Confusion Matrix
+[[129  14]
+ [  2  65]]
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+Winsconsin breast cancer :  scikit-learn : Depth -> 3: Confusion Matrix
+[[134   9]
+ [  0  67]]
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+Winsconsin breast cancer :  scikit-learn : Depth -> 5: Confusion Matrix
+[[133  10]
+ [  3  64]]
+------------------------------------------------------------------------------------------------------------------
+
+Process finished with exit code 0
+

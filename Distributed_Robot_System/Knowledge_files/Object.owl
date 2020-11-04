@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Bag_duck">
+    <Item_price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">230</Item_price>
+    <Item_color>Red</Item_color>
+    <can_be_picked_by rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Handle"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Bag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Item_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11235</Item_id>
+    <has_shape rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cuboid"/>
+    <Item_name>Bag_duck</Item_name>
+    <Item_malleability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Item_malleability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_grip">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Grip"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Bag_woodland">
+    <Item_color>Blue</Item_color>
+    <can_be_picked_by rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Handle"/>
+    <Item_price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</Item_price>
+    <Item_name>Bag_woodland</Item_name>
+    <Item_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</Item_id>
+    <has_shape rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cuboid"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Bag"/>
+    <Item_malleability>false</Item_malleability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_color">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Bag">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#can_be_picked_by">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Grip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Handle">
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Grip"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Item_grip>Leather Handle</Item_grip>
+    <Item_name>Handle</Item_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cup_taries">
+    <has_shape rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cuboid"/>
+    <Item_price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</Item_price>
+    <Item_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</Item_id>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cup"/>
+    <can_be_picked_by rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Handle"/>
+    <Item_malleability>false</Item_malleability>
+    <Item_color>Blue</Item_color>
+    <Item_name>Cup_taries</Item_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cuboid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Item_dimension>34*11*23</Item_dimension>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_dimension">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Dimension"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_id">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Ball">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_name">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#has_shape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Dimension">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_malleability">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_price">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_property">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Grip">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item_property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Cup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Object#Item">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

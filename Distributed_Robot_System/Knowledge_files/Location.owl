@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Na493ffb18da64a15a78104f9163cdd88">
+    <rdf:rest rdf:nodeID="Ncf3de301ba2d48c4ab318cfa1ae15b92"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#TelecommEquipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N01a068ff0a4043648dc4c8b836331a4b">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Medical"/>
+    <rdf:rest rdf:nodeID="Ne8cc0f70416940bfa020fc8ecb7643d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Camlin_pencils">
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Stationary"/>
+    <Inventory_rack_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Inventory_rack_no>
+    <Inventory_bin_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</Inventory_bin_no>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</Product_id>
+    <Product_malleability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Product_malleability>
+    <Product_name>Camlin_pencils</Product_name>
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+    <Inventory_aisle_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Inventory_aisle_no>
+    <Product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</Product_price>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Inventory_bin_no">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Bag_duck">
+    <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">702</Product_id>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <Product_malleability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Product_malleability>
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Product_name>Bag_duck</Product_name>
+    <Inventory_rack_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Inventory_rack_no>
+    <Product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</Product_price>
+    <Product_image>/home/soumyadeep/PycharmProjects/ontology_test/final/images/bag/bag1.png</Product_image>
+    <Inventory_aisle_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Inventory_aisle_no>
+    <Inventory_bin_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Inventory_bin_no>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Toothpaste">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Product_price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</Product_price>
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+    <Inventory_bin_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Inventory_bin_no>
+    <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">652</Product_id>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <Product_name>Toothpaste</Product_name>
+    <Product_malleability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Product_malleability>
+    <Inventory_rack_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Inventory_rack_no>
+    <Inventory_aisle_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Inventory_aisle_no>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Cup_taries">
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</Product_id>
+    <Product_image>/home/soumyadeep/PycharmProjects/final_system/PycharmProjects/Query_based_MRC_diknorob/Object_images/cup/cup2.png</Product_image>
+    <Inventory_rack_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Inventory_rack_no>
+    <Inventory_bin_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Inventory_bin_no>
+    <Product_name>Cup_taries</Product_name>
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+    <Inventory_aisle_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Inventory_aisle_no>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Product_malleability">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncf3de301ba2d48c4ab318cfa1ae15b92">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Textiles"/>
+    <rdf:rest rdf:nodeID="N406bc15284984741a6b374b8874a21e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Inventory_rack_no">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location_name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Stationary">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd28a092f6a6f48eeb4bcf80fa1977934">
+    <rdf:rest rdf:nodeID="N8591a9a71a28472292a0e89d6ead2978"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Electronics"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8cc0f70416940bfa020fc8ecb7643d4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <rdf:rest rdf:nodeID="Nd240a030f7b842aba20575f855a342c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Bag_woodland">
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+    <Inventory_bin_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Inventory_bin_no>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</Product_id>
+    <Inventory_rack_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Inventory_rack_no>
+    <Product_image>/home/soumyadeep/PycharmProjects/final_system/PycharmProjects/Query_based_MRC_diknorob/Object_images/bag/bag2.png</Product_image>
+    <Inventory_aisle_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Inventory_aisle_no>
+    <Product_name>Bag_woodland</Product_name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Electronics">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Product_image">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Available_At">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata">
+    <Location_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</Location_id>
+    <Location_name>Warehouse_kolkata</Location_name>
+    <Location_distance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</Location_distance>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na79df49b1b58480abe9079504953e4b0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#ChemicalPaints"/>
+    <rdf:rest rdf:nodeID="Nd4e914ebfb444ab6bb2dcb2106aa624c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc640ef2a525b4c1d9bcbed92348f0f63">
+    <rdf:rest rdf:nodeID="Naf4ce71df6484baeb233fcbb947042b2"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#SpareParts"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naf4ce71df6484baeb233fcbb947042b2">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Stationary"/>
+    <rdf:rest rdf:nodeID="Na493ffb18da64a15a78104f9163cdd88"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#SpareParts">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N406bc15284984741a6b374b8874a21e5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#VehicleParts"/>
+    <rdf:rest rdf:nodeID="Nabeb1bcb833f4939a43c37a788a9334a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Shop">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#HouseholdAppliances">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Product_name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Cup_design">
+    <Product_image>/home/soumyadeep/PycharmProjects/final_system/PycharmProjects/Query_based_MRC_diknorob/Object_images/cup/cup2.png</Product_image>
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <Inventory_rack_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Inventory_rack_no>
+    <Inventory_bin_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Inventory_bin_no>
+    <Product_name>Cup_design</Product_name>
+    <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</Product_id>
+    <Inventory_aisle_no rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Inventory_aisle_no>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Product_id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#ChemicalPaints">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location_id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_delhi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Cup_image">
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#PersonalItems"/>
+    <Product_image>/home/soumyadeep/PycharmProjects/ontology_test/final/images/cup/cup2.png</Product_image>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <Available_At rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_kolkata"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#VehicleParts">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4e914ebfb444ab6bb2dcb2106aa624c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Dockyard"/>
+    <rdf:rest rdf:nodeID="Nd28a092f6a6f48eeb4bcf80fa1977934"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb5c3b916a77f4790b7e3c57cea0cdeca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="Na79df49b1b58480abe9079504953e4b0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8591a9a71a28472292a0e89d6ead2978">
+    <rdf:rest rdf:nodeID="N848a1dd102754601a2b7045a8ec567b7"/>
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#HouseholdAppliances"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#TelecommEquipment">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nabeb1bcb833f4939a43c37a788a9334a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Textiles">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_bangalore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Medical">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Dockyard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd240a030f7b842aba20575f855a342c1">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Shop"/>
+    <rdf:rest rdf:nodeID="Nc640ef2a525b4c1d9bcbed92348f0f63"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Product_price">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse_mumbai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location_distance">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N848a1dd102754601a2b7045a8ec567b7">
+    <rdf:first rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#IndustrialAppliances"/>
+    <rdf:rest rdf:nodeID="N01a068ff0a4043648dc4c8b836331a4b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Inventory_aisle_no">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Warehouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#IndustrialAppliances">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location#Items"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+</rdf:RDF>

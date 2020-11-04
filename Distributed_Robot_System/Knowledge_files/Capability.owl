@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#"
+     xml:base="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability"
+     xmlns:Capability="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Can_Pick -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Can_Pick">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_capability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_capability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_payload -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machine_payload">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_matter_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_matter_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Product_weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Automatic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Automatic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Cosmetic_goods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Cosmetic_goods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Manual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Manual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Machines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Stationary_goods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Stationary_goods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Camlin_pencils -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Camlin_pencils">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Stationary_goods"/>
+        <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</Product_id>
+        <Product_matter_type>Solid</Product_matter_type>
+        <Product_name>Camlin_pencils</Product_name>
+        <Product_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</Product_size>
+        <Product_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</Product_weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Handle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Handle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Stationary_goods"/>
+        <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1134</Product_id>
+        <Product_name>Handle</Product_name>
+        <Product_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</Product_weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Rover_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Rover_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Automatic"/>
+        <Can_Pick rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Camlin_pencils"/>
+        <Can_Pick rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Handle"/>
+        <Machine_capability>Gripper</Machine_capability>
+        <Machine_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</Machine_id>
+        <Machine_name>Rover_1</Machine_name>
+        <Machine_payload rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</Machine_payload>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Rover_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Rover_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Automatic"/>
+        <Can_Pick rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Toothpaste"/>
+        <Machine_capability>Suction</Machine_capability>
+        <Machine_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">235</Machine_id>
+        <Machine_name>Rover_2</Machine_name>
+        <Machine_payload rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</Machine_payload>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Rover_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Rover_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Automatic"/>
+        <Can_Pick rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Camlin_pencils"/>
+        <Can_Pick rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Handle"/>
+        <Can_Pick rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Toothpaste"/>
+        <Machine_capability>Gripper, Suction</Machine_capability>
+        <Machine_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">236</Machine_id>
+        <Machine_name>Rover_3</Machine_name>
+        <Machine_payload rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</Machine_payload>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Toothpaste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Toothpaste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Cosmetic_goods"/>
+        <Product_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</Product_id>
+        <Product_matter_type>Semi_solid</Product_matter_type>
+        <Product_name>Toothpaste</Product_name>
+        <Product_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</Product_size>
+        <Product_weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</Product_weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Automatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Cosmetic_goods"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Manual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/soumyadeep/ontologies/2017/11/Capability#Stationary_goods"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

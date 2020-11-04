@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='L-2016.06-SP1-2 linux64' PARAM_COUNT=0
+.TITLE '$testbench for measuring worstcase delay and average energy for dff'
+ tphl_encoder     tplh_adder       tphl_adder       tphl_shifter    
+ tplh_shifter     tphl_sub         tplh_sub         iavg            
+ energy_avg       temper           alter#          
+  1.786e-10       -9.728e-10        1.496e-10        1.963e-10      
+  1.998e-10       -9.747e-10        1.547e-10       -3.930e-04      
+ -4.951e-12         25.0000        1               
