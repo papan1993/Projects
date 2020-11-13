@@ -1,0 +1,10 @@
+<launch>
+  <arg name="robot_prefix" default="Robot0"/>
+  <group ns="$(arg robot_prefix)">
+  <param name="tf_prefix" value="$(arg robot_prefix)"/>
+  <arg name="custom_param_file" default="$(find turtlebot_navigation)/param/dummy.yaml"/>
+  <include file="$(find cloud_robotics_simulator)/includes/move_base.launch.xml">
+    <arg name="custom_param_file" value="$(arg custom_param_file)"/>
+  </include>
+  </group>
+</launch>
