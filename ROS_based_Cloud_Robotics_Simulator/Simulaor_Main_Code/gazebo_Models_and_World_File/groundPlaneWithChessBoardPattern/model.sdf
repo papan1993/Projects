@@ -1,0 +1,1371 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+
+<!-- GROUND PLANE START -->
+  <model name="ground_plane">
+    <static>true</static>
+    <link name="ground_plane_link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
+          </plane>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+<!-- GROUND PLANE END -->
+
+
+<!--CHESS BOARD PATTERN (COLUMN x=-5.90625) START-->
+    <link name="1stColumn_link">
+     <pose>-5.90625 0 0 0 0 0</pose>
+      <collision name="White(GreyColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/White</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=-5.90625) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=-4.21875) START-->
+    <link name="2ndColumn_link">
+     <pose>-4.21875 0 0 0 0 0</pose>
+      <collision name="Black(WoodenColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=-4.21875) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=-2.53125) START-->
+    <link name="3rdColumn_link">
+     <pose>-2.53125 0 0 0 0 0</pose>
+      <collision name="White(GreyColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=-2.53125) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=-0.84375) START-->
+    <link name="4thColumn_link">
+     <pose>-0.84375 0 0 0 0 0</pose>
+      <collision name="Black(WoodenColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=-0.84375) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=0.84375) START-->
+    <link name="5thColumn_link">
+     <pose>0.84375 0 0 0 0 0</pose>
+      <collision name="White(GreyColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=0.84375) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=2.53125) START-->
+    <link name="6thColumn_link">
+     <pose>2.53125 0 0 0 0 0</pose>
+      <collision name="Black(WoodenColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=2.53125) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=4.21875) START-->
+    <link name="7thColumn_link">
+     <pose>4.21875 0 0 0 0 0</pose>
+      <collision name="White(GreyColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=4.21875) END-->
+
+<!--CHESS BOARD PATTERN (COLUMN x=5.90625) START-->
+    <link name="8thColumn_link">
+     <pose>5.90625 0 0 0 0 0</pose>
+      <collision name="Black(WoodenColor)">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 -0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 0.84375 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 2.53125 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+<!---->
+      <collision name="Black(WoodenColor)">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 4.21875 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+<!---->
+      <collision name="White(GreyColor)">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0 5.90625 0.001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.6875 1.6875 0</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+<!--CHESS BOARD PATTERN (COLUMN x=5.90625) END-->
+
+  </model>
+</sdf>
+
