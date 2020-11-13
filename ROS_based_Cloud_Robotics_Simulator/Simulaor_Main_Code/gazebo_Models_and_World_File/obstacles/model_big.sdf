@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<sdf version='13'>
+  <model name="obstacles">
+  <static>true</static>
+            <link name='boundary_one'>
+            <pose>0 0 0 0 0 0</pose>
+
+            <collision name='collision'>
+              <geometry>
+                <box>
+                  <size>1.15 1.15 3</size>
+                </box>
+              </geometry>
+            </collision>
+
+            <visual name='visual'>
+              <geometry>
+                <box>
+                  <size>1.15 1.15 3</size>
+                </box>
+              </geometry>
+                <material>
+                  <script>
+                    <uri>model://brick_box_3x1x3/materials/scripts</uri>
+                    <uri>model://brick_box_3x1x3/materials/textures</uri>
+                    <name>BrickBox/Diffuse</name>
+                  </script>
+                </material>
+            </visual>
+          </link>
+  </model>
+</sdf>
