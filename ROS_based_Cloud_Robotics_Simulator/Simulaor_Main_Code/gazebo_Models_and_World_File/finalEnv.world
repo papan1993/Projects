@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="13">
+  <world name="default">
+
+    <scene>
+      <sky>
+        <clouds>
+          <speed>100</speed>
+        </clouds>
+      </sky>
+      <grid>
+	 false
+      </grid>
+    </scene>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://groundPlaneWithChessBoardPattern</uri>
+    </include>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- My environment -->
+    <include>
+     <uri>model://finalEnv</uri>
+    </include>
+
+  </world>
+</sdf>
