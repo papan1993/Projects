@@ -1,0 +1,21 @@
+<launch>
+  <arg name="robot_prefix"/>
+  <arg name="initial_pose_x"/>
+  <arg name="initial_pose_y"/>
+  <arg name="initial_pose_a"/>
+ <include file="/home/soumyadeep/gazebo_world/launch_files/map.launch">
+  <arg name="robot_prefix" value="$(arg robot_prefix)"/>
+ </include>
+ <include file="/home/soumyadeep/gazebo_world/launch_files/amcl.launch">
+  <arg name="robot_prefix" default="$(arg robot_prefix)"/>
+  <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+  <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+  <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+ </include>
+ <include file="/home/soumyadeep/gazebo_world/launch_files/move_base.launch">
+  <arg name="robot_prefix" value="$(arg robot_prefix)"/>
+ </include>
+ <include file="/home/soumyadeep/gazebo_world/launch_files/relay.launch">
+  <arg name="robot_prefix" value="$(arg robot_prefix)"/>
+ </include>
+</launch>

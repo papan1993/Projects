@@ -1,0 +1,10 @@
+<launch>
+  <arg name="robot_prefix" default="Robot0"/>
+  <arg name="map_file" default="/home/soumyadeep/traj_research/maps/map_2.yaml"/>
+  <group ns="$(arg robot_prefix)">
+  <!-- Map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
+  <param name="frame_id" value="/$(arg robot_prefix)/map" />
+  </node>
+  </group>
+</launch>

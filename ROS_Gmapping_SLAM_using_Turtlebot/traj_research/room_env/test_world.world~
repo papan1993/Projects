@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<sdf version="13">
+  <world name="test_world">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+     <uri>/home/soumyadeep/room_env/test_room</uri>
+    </include>
+  </world>
+</sdf>
+

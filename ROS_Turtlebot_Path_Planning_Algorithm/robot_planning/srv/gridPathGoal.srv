@@ -1,0 +1,3 @@
+std_msgs/Float64MultiArray goalList
+---
+std_msgs/Bool result
