@@ -1,4 +1,0 @@
-<launch>
-  <include file="/home/prasun/simulation_project/launchFilesForOneRobot_WithoutDisturbingSystemFiles/my_room_gazebo.launch" />
-  <include file="/home/prasun/simulation_project/launchFilesForOneRobot_WithoutDisturbingSystemFiles/one_robot.launch" />
-</launch>

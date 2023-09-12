@@ -1,9 +1,0 @@
-<sdf version="13">
-  <world name="test">
-
-    <include>
-     <uri>model://turtlebot</uri>
-    </include>
-
-  </world>
-</sdf>

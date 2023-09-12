@@ -1,6 +1,0 @@
-<launch>
-  <arg name="robot_prefix" default="Robot0"/>
-  <group ns="$(arg robot_prefix)">
-  <node pkg="topic_tools" type="relay" name="relay" args="/$(arg robot_prefix)/navigation_velocity_smoother/raw_cmd_vel /$(arg robot_prefix)/cmd_vel_mux/input/teleop"/>
-  </group>
-</launch>
